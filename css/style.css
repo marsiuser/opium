@@ -77,8 +77,9 @@ header{
 }
 
 .header-wrapper .header-center img{
-    width: 133px;
+    width: 110px;
     height: auto;
+    margin-top: 10px;
 }
 
 .header-wrapper .header-right li:last-child > a{
@@ -382,6 +383,7 @@ header{
 
 .discuss{
     transform: translateY(100px);
+    position: relative;
 }
 
 .discuss .discuss-wrap{
@@ -523,4 +525,547 @@ footer{
 
 .header-wrap-mobile {
     display: none;
+}
+
+/* OPIUM MAIN PAGE */
+
+.experience{
+    text-align: center;
+}
+
+.experience h1{
+    font-weight: 500;
+    font-size: 105px;
+    line-height: 121px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 345px auto 0px;
+    max-width: 1191px;
+    position: relative;
+    padding-bottom: 300px;
+}
+
+.experience h1::before{
+    content: '';
+    position: absolute;
+    top: -36%;
+    background: url(../img/main-heart.svg) no-repeat;
+    background-size: 100%;
+    width: 53%;
+    height: 100%;
+    z-index: -1;
+    left: 21%;
+}
+
+.experience-advantages{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1500px;
+    margin: -43px auto 0px;
+}
+
+.experience-advantages__item{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.experience-advantages__img{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 43px;
+}
+
+.experience-advantages__description{
+    font-size: 23px;
+    line-height: 32px;
+    text-align: center;
+    color: #000000;
+    max-width: 300px;
+}
+
+.experience-btn{
+    margin: 127px auto 0px;
+}
+
+.experience-btn__call{
+    background: #FFCC00;
+    box-shadow: 0px 10px 30px rgba(255, 204, 0, 0.2);
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #111111;
+    padding: 33px 62px;
+    font-weight: 600;
+    width: 385px;
+    display: inline-block;
+    outline: none;
+    transition: 0.3s;
+}
+
+.experience-btn__call:hover{
+    box-shadow: none;
+    font-weight: 700;
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.experience-btn__addition{
+    color: #9AA8AD;
+    font-size: 21px;
+    font-weight: 500;
+    margin: 42px auto 0px;
+    display: block;
+    position: relative;
+}
+
+.experience-btn__addition::after{
+    content: '';
+    position: absolute;
+    bottom: -4%;
+    background: url(../img/adven-arrow.svg) no-repeat;
+    background-size: 100%;
+    width: 12px;
+    height: 220px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: block;
+    top: 66px;
+}
+
+.experience .viollet-blur{
+    background: url(../img/exp-vb.png) no-repeat;
+    background-size: 100%;
+    width: 627px;
+    height: 700px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.cliens{
+    background: rgba(245, 245, 245, 0.4);
+    backdrop-filter: blur(24px);
+    background: rgba(245, 245, 245, 0.4);
+    backdrop-filter: blur(24px);
+    padding: 166px 0px 30px;
+    backdrop-filter: blur(180px);
+    margin-top: 270px;
+}
+
+.cliens-finished{
+    font-weight: 500;
+    font-size: 75px;
+    line-height: 92px;
+    color: #111111;
+}
+
+.cliens-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cliens-addition{
+    margin: 30px 0px 127px;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.cliens-item{
+    width: 33%;
+    margin-bottom: 144px;
+}
+
+.clients-item__logo{
+    width: 93px;
+    height: 93px;
+    margin-bottom: 30px;
+}
+
+.cliens-item__about{
+    font-size: 23px;
+    line-height: 28px;
+    color: rgba(44, 58, 92, 0.8);
+    max-width: 450px;
+    font-weight: 500;
+    margin-bottom: 37px;
+}
+
+.cliens-item__winner{
+    color: #5B24B3;
+    font-size: 21px;
+    display: flex;
+    line-height: 32px;
+    max-width: 395px;
+    font-weight: 600;
+}
+
+.cliens-item__winner img{
+    margin-right: 19px;
+    width: 80px;
+}
+
+.cliens .blue-blur{
+    background: url(../img/clients-bb.png) no-repeat;
+    background-size: 100%;
+    width: 702px;
+    height: 1000px;
+    position: absolute;
+    left: 0px;
+    top: -550px;
+    z-index: -1;
+}
+
+.profile{
+    padding: 145px 0px 0px;
+}
+
+.profile-block{
+    background: #1161D9;
+    backdrop-filter: blur(4px);
+    color: #fff;
+    padding: 23px 0px 93px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-block__info{
+    padding-top: 97px;
+    width: 37%;
+}
+
+.profile-block__be{
+    font-size: 66px;
+    font-weight: 700;
+}
+
+.profile-block__more{
+    margin-top: 40px;
+    font-size: 30px;
+    line-height: 47px;
+    max-width: 437px;
+}
+
+.profile-block__link{
+    display: inline-block;
+    background: #FFFFFF;
+    color: #1161D9;
+    padding: 38px 0px;
+    width: 480px;
+    margin-top: 48px;
+    font-size: 23px;
+    text-align: center;
+    font-weight: 600;
+    height: 100px;
+    transition: 0.3s;
+}
+
+.profile-block__photo img{
+    position: relative;
+}
+
+.profile-block__photo_first{
+    top: 50px;
+    left: 230px;
+    z-index: 5;
+    width: 48%;
+}
+
+.profile-block__photo_second{
+    left: 50px;
+    top: 50px;
+    z-index: 2;
+    width: 25%;
+}
+
+.profile-block__photo_third{
+    left: -108px;
+    z-index: 1;
+    top: 47px;
+    width: 20%;
+}
+
+.profile-block__photo{
+    width: 95%;
+}
+
+.profile-block__link:hover{
+    font-weight: 700;
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+.profile {
+    position: relative;
+}
+
+.profile .blue-blur
+{
+    background: url(../img/clients-bb2.png) no-repeat;
+    background-size: 100%;
+    width: 702px;
+    height: 1300px;
+    position: absolute;
+    top: -350px;
+    right: 0px;
+}
+
+.process{
+    padding-top: 152px;
+}
+
+.process-header{
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 61px;
+    color: #111111;
+    letter-spacing: 3px;
+    margin-bottom: 87px;
+}
+.process-wrap{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 85px;
+}
+
+.process-bottom{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-top: none;
+    padding: 61px 85px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.process-wrap,
+.process-bottom{
+    background: rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    backdrop-filter: blur(60px);
+}
+
+.process-block{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 77px;
+}
+
+.process-block__item{
+    width: 30%;
+}
+
+.process-block__number{
+    font-size: 28px;
+    line-height: 22px;
+    color: #5B24B3;
+    font-weight: 600;
+}
+
+.process-block__name{
+    font-weight: bold;
+    font-size: 29px;
+    line-height: 24px;
+    color: #111111;
+    margin: 44px 0px 34px;
+    letter-spacing: 0.3px;
+}
+
+.process-block__description{
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 33px;
+    color: rgba(44, 58, 92, 0.79);
+    max-width: 415px;
+}
+
+.process-part{
+    font-weight: 600;
+    font-size: 73px;
+    line-height: 61px;
+    color: #5B24B3;
+}
+
+.process-bottom__deliverables{
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 150%;
+    color: #111111;
+    font-size: 38px;
+    margin-bottom: 100px;
+}
+
+.process-bottom__download{
+    font-size: 22px;
+    color: #5B24B3;
+}
+
+.process-bottom__left{
+    width: 30%;
+}
+
+.process-bottom__right{
+    width: 65%;
+}
+
+.process-bottom__des{
+    font-size: 24px;
+    line-height: 32px;
+    color: #111111;
+    margin-top: 10px;
+    max-width: 800px;
+    font-weight: 500;
+}
+
+.process-bottom__items{
+    display: flex;
+    justify-content: space-between;
+    max-width: 680px;
+    margin-top: 80px;
+}
+
+.process-bottom__item{
+    display: flex;
+    min-width: 230px;
+}
+
+.process-bottom__item_img{
+    width: 40px;
+    margin-right: 15px;
+    transform: translateY(-7px);
+}
+
+.process-bottom__item_des{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.process-bottom__download-img{
+    width: 30px;
+    height: 30px;
+    margin-right:15px;
+}
+
+.process{
+    position: relative;
+}
+
+.process .viollet-blur{
+    background: url(../img/company-2.png) no-repeat;
+    background-size: 100%;
+    width: 627px;
+    height: 1300px;
+    position: absolute;
+    top: -300px;
+    right: 0px;
+}
+
+.process .blue-blur{
+    background: url(../img/company.png) no-repeat;
+    background-size: 100%;
+    width: 702px;
+    height: 1300px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.profile::after{
+    content: '';
+    position: absolute;
+    /* bottom: -4%; */
+    background: url(../img/person-pr.png) no-repeat;
+    background-size: 100%;
+    width: 732px;
+    height: 100%;
+    top: 5;
+    left: 43%;
+    right: 0;
+    margin: 0 auto;
+    display: block;
+    bottom: -86%;
+    z-index: -1;
+}
+
+.process-block__more{
+    text-decoration-line: underline;
+    color: #0066FF;
+    font-size: 24px;
+    padding-top: 31px;
+    display: inline-block;
+}
+
+.process-block__more img{
+    margin-right: 15px;
+    width: 45px;
+}
+
+.process-wrap-sec{
+    padding-bottom: 40px;
+}
+
+.process-wrap-last{
+    position: relative;
+}
+
+.process-wrap-last .process-block__item {
+    width: 47%;
+}
+
+.process-wrap-last::before {
+    content: '';
+    position: absolute;
+    bottom: -66%;
+    background: url(../img/lqal.svg) no-repeat;
+    background-size: 100%;
+    width: 39%;
+    height: 100%;
+    z-index: -4;
+    left: 35%;
+}
+
+.roles{
+    padding-top: 172px;
+}
+
+.roles-header{
+    font-size: 74px;
+    font-weight: 700;
+}
+
+.roles-wrap{
+    margin-top: 130px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.roles-item{
+    width: 33%;
+    margin-bottom: 140px;
+}
+
+.roles-item__post{
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 32px;
+    color: #000000;
+    margin-bottom: 44px;
+}
+
+.roles-item__decs{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+    color: rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+}
+
+.process-blur{
+    background: url(../img/roles-center.png) center no-repeat;
+    background-size: 100%;
+    width: 47%;
+    height: 1300px;
+    position: absolute;
+    bottom: -21%;
+    left: 26%;
 }
