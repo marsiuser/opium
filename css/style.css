@@ -429,11 +429,11 @@ header{
     margin: 51px 0px 0px;
     color: #000;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .discuss .discuss-wrap a:hover{
-    color: #FFCC00;
-    background-color: #000;
+    font-size: 32px;
     transition: 0.3s;
 }
 
@@ -737,8 +737,20 @@ footer{
 }
 
 .profile-block__be{
+    position: relative;
     font-size: 66px;
     font-weight: 700;
+}
+
+.profile-block__be::before{
+    content: '';
+    position: absolute;
+    top: 3%;
+    background: url(../img/be.svg) no-repeat;
+    background-size: 100%;
+    width: 30px;
+    height: 100%;
+    left: 12%;
 }
 
 .profile-block__more{
@@ -843,6 +855,7 @@ footer{
     background: rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
     backdrop-filter: blur(60px);
+    z-index: 99999;
 }
 
 .process-block{
@@ -1012,18 +1025,6 @@ footer{
     width: 47%;
 }
 
-.process-wrap-last::before {
-    content: '';
-    position: absolute;
-    bottom: -66%;
-    background: url(../img/lqal.svg) no-repeat;
-    background-size: 100%;
-    width: 39%;
-    height: 100%;
-    z-index: -4;
-    left: 35%;
-}
-
 .roles{
     padding-top: 172px;
 }
@@ -1068,4 +1069,65 @@ footer{
     position: absolute;
     bottom: -21%;
     left: 26%;
+}
+
+.process .orange-blur{
+    background: url(../img/process-or-b.png) center no-repeat;
+    background-size: 100%;
+    width: 47%;
+    height: 1300px;
+    position: absolute;
+    bottom: 16%;
+    right: 0%;
+}
+
+.process-heart{
+    width: 39%;
+    transform: translate(0px, -213px);
+    z-index: -1;
+    position: absolute;
+    right: 26%;
+}
+
+.roles{
+    position: relative;
+}
+
+.roles-blur{
+    background: url(../img/pr-vl.png) no-repeat;
+    background-size: 100%;
+    width: 702px;
+    height: 1300px;
+    position: absolute;
+    top: -10%;
+    left: 0px;
+}
+
+.roles-blur__blue{
+    background: url(../img/blue-bl.png) center no-repeat;
+    background-size: 100%;
+    width: 47%;
+    height: 1300px;
+    position: absolute;
+    bottom: -35%;
+    right: 0%;
+}
+
+.profile-block__link_mob{
+    display: none;
+}
+
+.clients-slider,
+.process-bottom__download_mob{
+    display: none;
+}
+
+.header-wrap__logo{
+    margin: 0 auto;
+    max-width: 47px;
+}
+
+.header-wrap__logo img{
+    width: 47px;
+    padding: 15px 0px;
 }

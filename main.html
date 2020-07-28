@@ -6,6 +6,8 @@
     <title>Opium Main</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
@@ -32,6 +34,9 @@
                 </div>
             </div>
             <div class="header-wrap-mobile">
+                <div class="header-wrap__logo">
+                    <a href="#"><img src="img/header-logo.svg" alt="logo"></a>
+                </div>
                 <input id="burger" type="checkbox" />
                 <label for="burger">
                     <span></span>
@@ -85,31 +90,62 @@
         <div class="container">
             <h3 class="cliens-finished">With our cliens we successfully finished projects for such companies as </h3>
             <p class="cliens-addition">Due to NDAs, we cannot share details on certain projects or clients</p>
-            <div class="cliens-wrapper">
-                <div class="cliens-item">
-                    <img class="clients-item__logo" src="img/client1.svg" alt="clients 1">
-                    <p class="cliens-item__about">The symbol of Moscow fashion – Eastern Europe’s largest department store. A place where high-end boutiques meet haute cuisine and modern art</p>
-                    <span class="cliens-item__winner"><img src="img/reward.svg" alt="reward">The winner of the Best Russian Intranet Awward </span>
+        </div>
+        <div class="clients-slider">
+            <div class="container">
+                <div class="cliens-wrapper cliens-wrapper-desktop">
+                    <div class="cliens-item">
+                        <img class="clients-item__logo" src="img/client1.svg" alt="clients 1">
+                        <p class="cliens-item__about">The symbol of Moscow fashion – Eastern Europe’s largest department store. A place where high-end boutiques meet haute cuisine and modern art</p>
+                        <span class="cliens-item__winner"><img src="img/reward.svg" alt="reward">The winner of the Best Russian Intranet Awward </span>
+                    </div>
+                    <div class="cliens-item">
+                        <img class="clients-item__logo" src="img/clients4.svg" alt="clients 4">
+                        <p class="cliens-item__about">Leading Russian business software developer. Official distributor of Microsoft, Novell, Borland, and more than 100 other well-known vendors</p>
+                    </div>
+                    <div class="cliens-item">
+                        <img class="clients-item__logo" src="img/clients3.svg" alt="clients 3">
+                        <p class="cliens-item__about">A full-service commercial bank focusing on the client’s experience. Develops an omnichannel attitude to make more products available to a larger audience </p>
+                    </div>
+                    <div class="cliens-item">
+                        <img class="clients-item__logo" src="img/clients2.svg" alt="clients 2">
+                        <p class="cliens-item__about">Russian monetary authority also functioning as a banking mega-regulator. Maintains pricing and financial stability, nurtures financial development </p>
+                    </div>
+                    <div class="cliens-item">
+                        <img class="clients-item__logo" src="img/clients5.svg" alt="clients 5">
+                        <p class="cliens-item__about">The second-biggest Russian universal commercial bank. Initially servicing foreign trade operations, it quickly expanded to a large-scale financial group</p>
+                    </div>
+                    <div class="cliens-item">
+                        <img class="clients-item__logo" src="img/clients6.svg" alt="clients 6">
+                        <p class="cliens-item__about">No. 1 natural gas exporter in the world. It supplies more than 20 countries and invests in energy projects worldwide</p>
+                    </div>
                 </div>
-                <div class="cliens-item">
-                    <img class="clients-item__logo" src="img/clients4.svg" alt="clients 4">
-                    <p class="cliens-item__about">Leading Russian business software developer. Official distributor of Microsoft, Novell, Borland, and more than 100 other well-known vendors</p>
-                </div>
-                <div class="cliens-item">
-                    <img class="clients-item__logo" src="img/clients3.svg" alt="clients 3">
-                    <p class="cliens-item__about">A full-service commercial bank focusing on the client’s experience. Develops an omnichannel attitude to make more products available to a larger audience </p>
-                </div>
-                <div class="cliens-item">
-                    <img class="clients-item__logo" src="img/clients2.svg" alt="clients 2">
-                    <p class="cliens-item__about">Russian monetary authority also functioning as a banking mega-regulator. Maintains pricing and financial stability, nurtures financial development </p>
-                </div>
-                <div class="cliens-item">
-                    <img class="clients-item__logo" src="img/clients5.svg" alt="clients 5">
-                    <p class="cliens-item__about">The second-biggest Russian universal commercial bank. Initially servicing foreign trade operations, it quickly expanded to a large-scale financial group</p>
-                </div>
-                <div class="cliens-item">
-                    <img class="clients-item__logo" src="img/clients6.svg" alt="clients 6">
-                    <p class="cliens-item__about">No. 1 natural gas exporter in the world. It supplies more than 20 countries and invests in energy projects worldwide</p>
+                <div class="clients-slider">
+                    <div class="clien">
+                        <img class="clients-item__logo" src="img/client1.svg" alt="clients 1">
+                        <p class="cliens-item__about">The symbol of Moscow fashion – Eastern Europe’s largest department store. A place where high-end boutiques meet haute cuisine and modern art</p>
+                        <span class="cliens-item__winner"><img src="img/reward.svg" alt="reward">The winner of the Best Russian Intranet Awward </span>
+                    </div>
+                    <div class="clien">
+                        <img class="clients-item__logo" src="img/clients4.svg" alt="clients 4">
+                        <p class="cliens-item__about">Leading Russian business software developer. Official distributor of Microsoft, Novell, Borland, and more than 100 other well-known vendors</p>
+                    </div>
+                    <div class="clien">
+                        <img class="clients-item__logo" src="img/clients3.svg" alt="clients 3">
+                        <p class="cliens-item__about">A full-service commercial bank focusing on the client’s experience. Develops an omnichannel attitude to make more products available to a larger audience </p>
+                    </div>
+                    <div class="clien">
+                        <img class="clients-item__logo" src="img/clients2.svg" alt="clients 2">
+                        <p class="cliens-item__about">Russian monetary authority also functioning as a banking mega-regulator. Maintains pricing and financial stability, nurtures financial development </p>
+                    </div>
+                    <div class="clien">
+                        <img class="clients-item__logo" src="img/clients5.svg" alt="clients 5">
+                        <p class="cliens-item__about">The second-biggest Russian universal commercial bank. Initially servicing foreign trade operations, it quickly expanded to a large-scale financial group</p>
+                    </div>
+                    <div class="clien">
+                        <img class="clients-item__logo" src="img/clients6.svg" alt="clients 6">
+                        <p class="cliens-item__about">No. 1 natural gas exporter in the world. It supplies more than 20 countries and invests in energy projects worldwide</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -128,12 +164,14 @@
                         <img class="profile-block__photo_second" src="img/profile2.png" alt="profile 2">
                         <img class="profile-block__photo_third" src="img/profile3.png" alt="profile 3">
                 </div>
+                <a class="profile-block__link_mob" href="#">Check out our Behance profile</a>
             </div>
         </div>
     </div>
     <div class="process">
         <div class="viollet-blur"></div>
         <div class="blue-blur"></div>
+          <div class="orange-blur"></div>
         <div class="container">
             <h3 class="process-header">How we work</h3>
             <div class="process-wrap">
@@ -159,7 +197,7 @@
             <div class="process-bottom">
                 <div class="process-bottom__left">
                     <h3 class="process-bottom__deliverables"> Deliverables </h3>
-                    <a class="process-bottom__download" href="#"><img class="process-bottom__download-img" src="img/process-download.svg" alt="download icon"> download</a>
+                    <a class="process-bottom__download process-bottom__download_des" href="#"><img class="process-bottom__download-img" src="img/process-download.svg" alt="download icon"> download</a>
                 </div>
                 <div class="process-bottom__right">
                     <p class="process-bottom__des">PDF description of all objects in the app as well as their data attributes, UI blueprints, customer journey scripts </p>
@@ -177,6 +215,7 @@
                             <p class="process-bottom__item_des">USM</p>
                         </div>
                     </div>
+                    <a class="process-bottom__download process-bottom__download_mob" href="#"><img class="process-bottom__download-img" src="img/process-download.svg" alt="download icon"> download</a>
                 </div>
             </div>
             <div class="process-wrap process-wrap-sec">
@@ -203,7 +242,7 @@
             <div class="process-bottom">
                 <div class="process-bottom__left">
                     <h3 class="process-bottom__deliverables"> Deliverables </h3>
-                    <a class="process-bottom__download" href="#"><img class="process-bottom__download-img" src="img/process-download.svg" alt="download icon"> download</a>
+                    <a class="process-bottom__download process-bottom__download_des" href="#"><img class="process-bottom__download-img" src="img/process-download.svg" alt="download icon"> download</a>
                 </div>
                 <div class="process-bottom__right">
                     <p class="process-bottom__des">Figma project and UI-kit, testing videos, complicated animation videos, PDF test report with comments</p>
@@ -221,6 +260,7 @@
                             <p class="process-bottom__item_des">UI-kit</p>
                         </div>
                     </div>
+                    <a class="process-bottom__download process-bottom__download_mob" href="#"><img class="process-bottom__download-img" src="img/process-download.svg" alt="download icon"> download</a>
                 </div>
             </div>
             <div class="process-wrap process-wrap-last">
@@ -240,8 +280,10 @@
             </div>
         </div>
         <div class="process-blur"></div>
+        <img class="process-heart" src="img/lqal.svg" alt="heart">
     </div>
     <div class="roles">
+        <div class="roles-blur"></div>
         <div class="container">
             <h3 class="roles-header">Roles</h3>
             <div class="roles-wrap">
@@ -279,6 +321,7 @@
                 </div>
             </div>
         </div>
+        <div class="roles-blur__blue"></div>
     </div>
     <div class="discuss">
         <div class="container">
@@ -390,5 +433,6 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
 </body>
 </html>
